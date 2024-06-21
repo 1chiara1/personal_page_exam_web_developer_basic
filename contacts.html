@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="styles-contacts.css"/>
+        <script src="js-contacts.js"defer></script>
+    </head>
+    <body>
+        <div class="page-container">
+            <header>
+              <div class="header-left-side">
+                <div class="logo">C</div>
+                <h4>CGi</h4>
+              </div>
+              <div class="header-right-side">
+                <nav>
+                  <div class="about-item">About</div>
+                  <div>Resume</div>
+                  <div>Portfolio</div>
+                  <div>Blog</div>
+                  <div><a href="#" id="openModalContacts">Contacts</a></div>
+                </nav>
+              </div>
+            </header>
+            <div class="modalContacts">
+                <div class="modal-content-contacts">
+                  <span id="closeModalContacts">&times; Close</span>
+                  <p>Perché mi clicchi? Sei già su Contacts! Chiudi va...</p>
+                </div>
+            </div>
+            <main class="main-contacts">
+              <div class="my-contacts">
+                  <h3>I miei contatti</h3>
+                  <h4>Indirizzo:</h4>
+                  <p>Via Lorem Ipsum, 1, 20100, Milano</p>
+                  <h4>Telefono:</h4>
+                  <p>+39 123456789</p>
+                  <h4>Email:</h4>
+                  <p><a href="mailto:chiara@loremipsum.com">chiara@loremipsum.com</a></p>
+
+              </div>
+              <div class="visitor-contacts">
+                <h3>Se ti va, lasciami i tuoi contatti:</h3>
+                <form>
+                  <fieldset>
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" id="nome" name="nome" required><br>
+                    <label for="cognome">Cognome:</label><br>
+                    <input type="text" id="cognome" name="cognome" required><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required> <br>
+                    <label for="newsletter"> Vuoi iscriverti alla newsletter? </label>
+                    <label for="yes-newsletter">Sì</label>
+                    <input type="radio" id="yes-newsletter" name="newsletter" value="yes-newsletter" checked>
+                    <label for="no-newsletter">No</label>
+                    <input type="radio" id="no-newsletter" name="newsletter" value="no-newsletter">
+                    <br><br>
+                    <input type="submit" id="submit">
+                  </fieldset>
+                </form>
+              </div>
+            </main>
+            <footer>
+              <div class="footer-left">
+                <a href="https://twitter.com/"> Twitter </a>
+                <a href="https://www.facebook.com"> Facebook </a>
+                <a href="https://www.instagram.com/"> Instagram </a>
+              </div>
+              <div class="footer-right">
+                <p>© 2020 All rights reserved. LMPixels.</p>
+              </div>
+            </footer>
+
+            
+        </div>
+    </body>
+</html>
